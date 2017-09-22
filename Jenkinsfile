@@ -5,6 +5,6 @@ node {
 
         sh "pwd"
 
-        step([$class: 'StashNotifier'])
+        sh "sleep 20s"
     }
 }

@@ -1,8 +1,10 @@
-timestamps {
+node {
+    timestamps {
 
-    step([$class: 'WsCleanup'])
+        step([$class: 'WsCleanup'])
 
-    sh "pwd"
+        sh "pwd"
 
-    step([$class: 'StashNotifier'])
+        step([$class: 'StashNotifier'])
+    }
 }
